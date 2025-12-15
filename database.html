@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UN Project Comparison Tool</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.2/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 Project Database Comparator</h1>
+    <p>Upload two Excel files to compare changes in <strong>Pledge</strong>, <strong>End Date</strong>, and <strong>Status</strong> by Project Code.</p>
+
+    <div class="upload-section">
+      <label>📁 File A (e.g., Legacy DB)</label>
+      <input type="file" id="fileA" accept=".xlsx,.xls" />
+
+      <label>📁 File B (e.g., Updated DB)</label>
+      <input type="file" id="fileB" accept=".xlsx,.xls" />
+
+      <button id="compareBtn" disabled>Compare Files</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
